@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.xiaheng.maven.archetypes</groupId>
+	<artifactId>maven-archetype-webapp3.1</artifactId>
+	<version>0.0.1</version>
+	<packaging>maven-archetype</packaging>
+
+	<name>maven-archetype-webapp3.1</name>
+
+	<description>webapp3.1骨架工程，可以取代apache的maven-archetype-webapp 1.0</description>
+
+	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.archetype</groupId>
+				<artifactId>archetype-packaging</artifactId>
+				<version>3.0.1</version>
+			</extension>
+		</extensions>
+
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-archetype-plugin</artifactId>
+					<version>3.0.1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<url>http://www.xiaheng.net/</url>
+
+	<!-- 项目发布管理 id要和setting.xml匹配 -->
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>User Project Release</name>
+			<url>http://192.168.2.222:8324/repository/maven-releases/</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>User Project SNAPSHOTS</name>
+			<url>http://192.168.2.222:8324/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>
